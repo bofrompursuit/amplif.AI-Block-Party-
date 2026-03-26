@@ -334,7 +334,7 @@ function generateSchedule() {
       const blob  = new Blob([`amplif.AI Block Party Tool — Event Schedule\n${'─'.repeat(40)}\n\n${text}`], {type:'text/plain'});
       const a     = document.createElement('a');
       a.href      = URL.createObjectURL(blob);
-      a.download  = 'blockfest-schedule.txt';
+      a.download  = 'amplif-ai-block-party-schedule.txt';
       a.click();
     };
   }, 2200);
