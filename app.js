@@ -1,5 +1,5 @@
 // ═══════════════════════════════════════════
-// BlockFest — app.js
+// amplif.AI Block Party Tool — app.js
 // Sign-up form, blueprint canvas, AI schedule
 // ═══════════════════════════════════════════
 
@@ -331,7 +331,7 @@ function generateSchedule() {
     // Download button
     document.getElementById('download-btn').onclick = () => {
       const text = items.map(i => `${i.time}  ${i.title}\n       ${i.desc}`).join('\n\n');
-      const blob  = new Blob([`BlockFest — Event Schedule\n${'─'.repeat(40)}\n\n${text}`], {type:'text/plain'});
+      const blob  = new Blob([`amplif.AI Block Party Tool — Event Schedule\n${'─'.repeat(40)}\n\n${text}`], {type:'text/plain'});
       const a     = document.createElement('a');
       a.href      = URL.createObjectURL(blob);
       a.download  = 'blockfest-schedule.txt';
